@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".ChatFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+
+        />
+    <LinearLayout
+        android:keyboardNavigationCluster="false"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:padding="0dp"
+        android:layout_height="730dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#fff"
+        android:layout_weight="9"
+
+        android:weightSum="10"
+>
+
+        <EditText
+            android:id="@+id/chat_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@android:color/transparent"
+            android:hint="Type your message here…"
+            android:paddingLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/chat_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_send" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

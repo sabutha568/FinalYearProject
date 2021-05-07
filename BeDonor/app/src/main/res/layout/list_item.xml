@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/blog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:fontFamily="@font/sf_compact"
+                android:textColor="#454545"
+                android:textSize="24sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/blog_image"
+                android:layout_width="match_parent"
+                android:layout_height="204dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/post_img" />
+
+
+
+            <TextView
+                android:id="@+id/blog_desc"
+                android:textColor="#707070"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingMultiplier="1.2"
+                android:lineSpacingExtra="2dp"
+                android:text="Body part" />
+
+            <Button
+                android:id="@+id/blog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow_forward"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_compact"
+                android:textAllCaps="false"
+                android:drawablePadding="10dp"
+                android:textColor="#E76346"
+                android:drawableTint="#E76346"
+                android:textAlignment="textEnd"
+                android:background="#fff"
+                android:text="Read More" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CC3E3E</color>
+    <color name="colorPrimaryDark">#CC3E3E</color>
+    <color name="colorPink">#E69191</color>
+    <color name="background">#FEC</color>
+    <color name="colorAccent">#E76346</color>
+    <color name="lightGrey">#D6D6D6</color>
+
+    <color name="orange">#FF9900</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="red">#CC3E3E</color>
+    <color name="chatText">#382F2F</color>
+    <color name="chatBg">#F5A18F</color>
+</resources>
